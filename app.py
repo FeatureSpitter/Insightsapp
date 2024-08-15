@@ -113,10 +113,10 @@ survey_responses = [
 
 
 # Replace these values with your actual Twilio credentials
-TWILIO_ACCOUNT_SID = "AC952933e9303a9c0021be3c0ce432caec"
-TWILIO_AUTH_TOKEN = "5e14a5105201307f6d9a77af3fd81853"
-TWILIO_PHONE_NUMBER = '+19495652625'
-POSTGRES_URL = "postgresql://fezjdtyy:BxOZhSdBMyYrUDpNzs5Rxmh9sW9STTbv@mouse.db.elephantsql.com/fezjdtyy"
+TWILIO_ACCOUNT_SID = os.getenv('APP_CONFIGS__TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.getenv('APP_CONFIGS__TWILIO_AUTH_TOKEN')
+TWILIO_PHONE_NUMBER = os.getenv('APP_CONFIGS__TWILIO_PHONE_NUMBER')
+POSTGRES_URL = os.getenv('APP_CONFIGS__POSTGRES_URL')
 
 
 # URLs of audio files for each question
